@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Python Documentation</title>
+  <link rel="stylesheet" href="python_documentation.css">
+</head>
+
+<body>
+  <nav id ="navbar">
+    <header><h1>Python Basics</h1></header>
+    <div class ="nav-items">
+      <a class ="nav-link" href ="#What_Is_Python">What Is Python</a>
+      <a class ="nav-link" href ="#Python_Setup">Python Setup</a>
+      <a class ="nav-link" href ="#IDLE">IDLE</a>
+      <a class ="nav-link" href ="#Hello_World">Hello World</a>
+      <a class ="nav-link" href ="#Print">Print</a>
+      <a class ="nav-link" href ="#Variables">Variables</a>
+      <a class ="nav-link" href ="#Operators">Operators</a>
+      <a class ="nav-link" href ="#If_Statements">If Statements</a>
+      <a class ="nav-link" href ="#Learn_More">Learn More</a>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class ="main-section" id ="What_Is_Python">
+      <header><h2>What Is Python</h2></header>
+      <p>Python is an easy to use high level programming language. Python is great for begginers and genneraly easy to use. It has a design philosophy emphasizing the readability of code and unlike most languages uses whitespace and indentation to delimit blocks. The language's core philosophy is summarized in the document The Zen of Python (PEP 20), which includes:</p>
+      <ul>
+          <li>Beautiful is better than ugly</li>
+          <li>Explicit is better than implicit</li>
+          <li>Simple is better than complex</li>
+          <li>Complex is better than complicated</li>
+          <li>Readability counts</li>
+      </ul>
+    </section>
+    <section class ="main-section" id ="Python_Setup">
+      <header><h2>Python Setup</h2></header>
+      <p>Python is free and reletively easy to set up. just go to <a href ="https://www.python.org/downloads/">https://www.python.org/downloads/</a> and download the appropriate version for your opperating system. once it is downloaded run the setup and follow the instructions given to you on screen</p>
+    </section>
+    <section class ="main-section" id ="IDLE">
+      <header><h2>IDLE</h2></header>
+      <p>At this point python should installed on your computer, if it is not please go to the <a href ="#python-setup">Python Setup Section</a> Python is packedged with a nice easy to use graphical Integrated Development Unit (normaly abbreviated "IDE"). Named in part after Eric Idle from Montey Python, pythons standard IDE is called IDLE for "Integrated DeveLopment Environment". You can open it by going into your python folder and clicking on the application "IDLE". Once it opens up the first thing that comes up is a shell, because python is an interpereted language it doesn't need to be completed and compiled before you run it. If you have ever used your computers terminal or command line it is not unlike that, you can type in commands and it will procsess them on the fly as you type them in.</p>
+    </section>
+    <section class ="main-section" id =Hello_World>
+      <header><h2>Hello World</h2></header>
+      <p>To get started and create your first Hello World program, open up IDLE and click File > New File. Save this as hello.py where ever you want to keep your code, I suggest going into your documents and creating a folder called python-projects. The .py is the python extention this is how your computer knows it is a python script.</p>
+      
+      <p>Type out <code>print ("Hello World!")</code> into your program. Save your work. Click Run > Run Module</p>
+      
+      <p>Your shell should have popped up with the text <code>Hello World!</code> Congrats you have created your first python program.</p>
+    </section>
+    <section class ="main-section" id ="Print">
+      <header><h2>Print</h2></header>
+      <p>In the hello world program the code that was used was <code>print ("Hello World")</code>, print is a function that takes in what you put in the parentheses it and prints it out to the screen. You can give it a <em>value</em> or an <em>expression</em>. A <em>value</em> is something that is already in its final state. Say you know that you want the program to say <code>Its cold outside</code> then you would call the print function with the value inside the parenthese. Make sure the value is inside of quotes if you are working with words, numbers do not need them:</p>
+      <div class ="code-block">
+        <div class ="code-block-input"><code>print ("Its cold outside")</code></div>
+        <div class ="code-block-output"><code>Its cold outside</code></div>
+      </div>
+      <p>An <em>expression</em> is something that needs to be solved still. If I have two numbers 5 and 10 and I want to print out what those two numbers are added together you can do that inside the parentheses of print and it will return the result.</p>
+      <div class ="code-block">
+        <div class ="code-block-input"><code>print (5 + 10)</code></div>
+        <div class ="code-block-output"><code>15</code></div>
+      </div>
+      <p>You can also add two sets of words, or <em>strings</em> together, this is called concatenating. Look what happens when we add the string "Have a " to the string "good day" and print them out.</p>
+      <div class ="code-block">
+        <div class ="code-block-input"><code>print ("Have a " + "good day")</code></div>
+        <div class ="code-block-output"><code>Have a good day</code></div>
+      </div>
+      <p>Note: although you can make expressions as long as you want its always a good idea to keep your code readable and clear. Your statements should be concice enough to where someone who looks at your code should be able to tell what you are trying to accoplish with every line. When printing out <code>print ("Have a " + "nice day")</code> there are only two things being added, which is pretty easy to understand. Something like <code>print ("H" + "i" + " " + "h" + "o" + "w" + " "a" + "r" + "e" + "y" + "o" + "u" + " " + "t" + "o" + "d" + "a" + "y" + "?")</code> may functionally work, but it would be better practice to combine the string in advance and then send it like so <code>print ("Hi how are you today?")</code>.</p>
+    </section>
+    <section class ="main-section" id ="Variables">
+      <header><h2>Variables</h2></header>
+      <p>In computing there are a few main abilities that allow you to solve complicated issues. Those main abilities are <em>Variables</em>: the ability to store and recall information, <em>Comparison</em>: the ability to compare values and expressions and do different actions based on different results, and <em>Iteration</em>: the ability to run the same peice of code multiple times. <em>Variables</em> are the simplist concept out of the three. Just like in math you can assign value to a letter or word and then use that value later on when you need it. When naming variables you can use capital A-Z lowercase a-z and numbers 1-10. You cannot start with a number and for now it is reccomneded that you start off every variable with lowercase letters, although you can start them off with capital letters this usually denotes they are a type of data that you wont learn about for a little while. The notation for storing a value in a variable is <code>variable_name = value/expression</code>. So lets say I want to store three numbers and then add them together and store the result too: num1, num2, num3, and num4, and then print out their values on the screen</p>
+        <div class ="code-block">
+          <div class ="code-block-input">
+            <code>num1 = 1</code>
+            <br><code>num2 = 5</code>
+            <br><code>num3 = 10</code>
+            <br><code>num4 = num1 + num2 + num3</code>
+            <br><code>print (num1)</code>
+            <br><code>print (num2)</code>
+            <br><code>print (num3)</code>
+            <br><code>print (num4)</code>
+          </div>
+          <div class ="code-block-output">
+            <code>1</code>
+            <br><code>5</code>
+            <br><code>10</code>
+            <br><code>16</code>
+          </div>
+      </div>
+        <p>Variables can be changed on the go, you can rewrite over a variable with new data whenever you want. So continuing on from the code above we will add 1 to num3 and see what all of the values are</p>
+        <div class ="code-block">
+          <div class ="code-block-input">
+            <code>num3 = num3 + 1</code>
+            <br><code>print (num1)</code>
+            <br><code>print (num2)</code>
+            <br><code>print (num3)</code>
+            <br><code>print (num4)</code>
+          </div>
+          <div class ="code-block-output">
+            <code>1</code>
+            <br><code>5</code>
+            <br><code>11</code>
+            <br><code>16</code>
+          </div>
+      </div>
+        <p>As you can see we did not touch variables num1 or num2 so they are the same value as they were before. num3 is now 11, it was 10. How did this work? Well when you assign a value to a variable it evaluates from right to left. the statement <code>num3 = num3 + 1</code> starts at the right side and evaluates any expressions first, the expression is <code>num3 + 1</code> to evaluate that the program needs finds out what the value of num3 is, so it checks in its memory and pulls out the number 10, now it knows both numbers 10 and 1 and adds them together to get the number 11. The expression is now evaluated and the result is 11, next the computer checks what you want to do with it, there is an equals sign so it knows you want to store the information. It looks on the left side of the equals sign, num3 is there so it stores the value 11 in num3.</p>
+        <p>What about the last value of num4, it still has a value of 16 but it was made of num1 + num2 + num3 so shouldn't it be 17 now? No because it is no longer ascociated with those numbers. When num4 was created it went through the same process that we just went throgh for num3. it evaluated the expression by finding the values of num1, num2, and num3, which were 1, 5, and 10 respectivly, it added them up and the result was 16. It then saw the number 16 was going to be stored in a variable and put it in storage associated with the variable num4. Once this action was complete it had no connection to any of the parts of the expression it was set to. That is we told it to set itself to the values that the variables represented, and not to the variables themselfs.</p>
+        <p>Here is another example, say we have a bunch of characters that we want to print together. We can concatenate them all together and store them in a variable. We can do that like so:</p>
+        <div class ="code-block">
+          <div class ="code-block-input">
+            <code>phrase = "H" + "i" + " " + "h" + "o" + "w" + " "a" + "r" + "e" + "y" + "o" + "u" + " " + "t" + "o" + "d" + "a" + "y" + "?"</code>
+            <br><code>print (phrase)</code>
+          </div>
+          <div class ="code-block-output">
+            <code>Hi how are you today?</code>
+          </div>
+      </section>
+      <section class ="main-section" id ="Operators">
+        <header><h2>Operators</h2></header>
+        <p>An operator is a shortcut for a function in python that has widespread or essential use. E.g. the addition sign is an opperator in python, the commonly used opperator <code>a + b</code> is shortended from <code>operator.add (a, b)</code></p>
+        <h3>Math Operators</h3>
+        <table>
+          <tr>
+            <th>Operation</th>
+            <th>Syntax</th>
+            <th>Function</th>
+          </tr>
+          <tr>
+            <td>Addition</td>
+            <td>a + b</td>
+            <td>operator.add(a, b)</td>
+          </tr>
+          <tr>
+            <td>Subtraction</td>
+            <td>a - b</td>
+            <td>operator.sub(a, b)</td>
+          </tr>
+          <tr>
+            <td>Multiplication</td>
+            <td>a * b</td>
+            <td>operator.mul(a, b)</td>
+          </tr>
+          <tr>
+            <td>Division</td>
+            <td>a / b</td>
+            <td>operator.truediv(a, b)</td>
+          </tr>
+          <tr>
+            <td>Exponentiation</td>
+            <td>a ** b</td>
+            <td>operator.pow(a, b)</td>
+          </tr>
+          <tr>
+            <td>Modulo</td>
+            <td>a % b</td>
+            <td>operator.mod(a, b)</td>
+          </tr>
+        </table>
+        
+        <h3>Inplace Operators</h3>
+        <p>Inplace Operators are shortcuts for changing variables inplace. E.g. <code>var = a</code> you want to add b to var, you can do <code>var += b</code> instead of <code>var = var + b</code></p>
+                <table>
+          <tr>
+            <th>Operation</th>
+            <th>Equivalent</th>
+            <th>Syntax</th>
+            <th>Function</th>
+          </tr>
+          <tr>
+            <td>Add in place</td>
+            <td>a = a + b</td>
+            <td>a += b</td>
+            <td>operator.iadd(a, b)</td>
+          </tr>
+          <tr>
+            <td>Subtract in place</td>
+            <td>a = a - b</td>
+            <td>a -= b</td>
+            <td>operator.isub(a, b)
+          </tr>
+          <tr>
+            <td>Multiply in place</td>
+            <td>a = a * b</td>
+            <td>a *= b</td>
+            <td>operator.imul(a, b)</td>
+          </tr>
+          <tr>
+            <td>Divide in place</td>
+            <td>a = a / b</td>
+            <td>a /= b</td>
+            <td>operator.itruediv(a, b)</td>
+          </tr>
+          <tr>
+            <td>Exponentiation in place</td>
+            <td>a = a ** b</td>
+            <td>a **= b</td>
+            <td>operator.ipow(a, b)</td>
+          </tr>
+          <tr>
+            <td>Modulo in place</td>
+            <td>a = a % b</td>
+            <td>a %= b</td>
+            <td>operator.imod(a, b)</td>
+          </tr>
+        </table>
+        
+        <h3>Comparison Operators</h3>
+        <p>Comparison operators make it easy to evaluate a statement, most commonly used for if statements. E.g. <code>if (a > b): a = b</code></p>
+        <table>
+          <tr>
+            <th>Operation</th>
+            <th>Syntax</th>
+            <th>Function</th>
+          </tr>
+          <tr>
+            <td>Equality</td>
+            <td>a == b</td>
+            <td>operator.eq(a, b)</td>
+          </tr>
+          <tr>
+            <td>Non equality</td>
+            <td>a != b</td>
+            <td>operator.ne(a, b)</td>
+          </tr>
+          <tr>
+            <td>Greater than</td>
+            <td>a > b</td>
+            <td>operator.gt(a, b)</td>
+          </tr>
+          <tr>
+            <td>Greater than or equal to</td>
+            <td>a >= b</td>
+            <td>operator.ge(a, b)</td>
+          </tr>
+          <tr>
+            <td>Less than</td>
+            <td>a < b</td>
+            <td>operator.lt(a, b)</td>
+          </tr>
+          <tr>
+            <td>Less than or equal to</td>
+            <td>a <= b</td>
+            <td>operator.le(a, b)</td>
+          </tr>
+        </table>
+    </section>
+    <section class ="main-section" id ="If_Statements">
+      <header><h2>If Statements</h2></header>
+      <p>Conditional statements are essential to creating programs that are more than just a static output. In python the main way of control flow is through loops and through conditional statements called if statements.</p>
+      <div class ="code-block">
+        <div class ="code-block-input">
+          <code>a = 6</code>
+          <br><code>b = 5</code>
+          <br><code>if (a > b): print ("a is bigger than b")</code>
+          <br><code>if (b > a): print ("b is bigger than a")</code>
+        </div>
+        <div class ="code-block-output">
+          <code>a is bigger than b</code>
+        </div>
+      </div>
+      <p>The expression given to the if statement is evaluated, if it is true than the code immediately following it will be executed. If it is false it will look for an elif or else statement. An elif is short for else if, as in if the if statement is false it will check to see if the conditional statement in the elif is true, if it is true it will execute the code following it, if it is false it will check the next elif statement, if there are no more elif statements it will see if there is an else statement and execute the code following that.</p>
+      <div class ="code-block">
+        <div class ="code-block-input">
+          <code>a = 5</code>
+          <br><code>b = 10</code>
+          <br><code>if (a > b): print ("a is bigger than b")</code>
+          <br><code>elif (b > a): print ("b is bigger than a")</code>
+          <br><code>else: print ("a is the same size as b")</code>
+        </div>
+        <div class ="code-block-output">
+          <code>b is bigger than a</code>
+        </div>
+      </div>
+            <div class ="code-block">
+        <div class ="code-block-input">
+          <code>a = 5</code>
+          <br><code>b = 5</code>
+          <br><code>if (a > b): print ("a is bigger than b")</code>
+          <br><code>elif (b > a): print ("b is bigger than a")</code>
+          <br><code>else: print ("a is the same size as b")</code>
+        </div>
+        <div class ="code-block-output">
+          <code>a is the same size as b</code>
+        </div>
+      </div>
+    </section>
+    <section class ="main-section" id ="Learn_More">
+      <header><h2>Learn More</h2></header>
+      <ul>
+        <li><a href ="https://docs.python.org/3/">The Official Python Documentation</a></li>
+        <li><a href ="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia Page on Python</a></li>
+        <li><a href ="https://www.reddit.com/r/Python/">The Python Sub Reddit</a></li>
+      </ul>
+  </main>
+</body>
