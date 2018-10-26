@@ -1,0 +1,164 @@
+body{
+  margin: 0px;
+  font-family: verdana;
+  color: #3b3a3a;
+  overflow:hidden;
+}
+
+#main-content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+main{
+  position: absolute;
+  top: 2.9em;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left 0px;
+  width: 100%;
+  height: 2.5em;
+}
+
+#navbar div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar a {
+  color: #333;
+  padding: 1em;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+  background-color: #333;
+  color: #FAFAFA;
+}
+
+#welcome-section{
+  text-align: center;
+  height: 100vh;
+}
+
+#welcome-section h1{
+  padding-top: 30vh;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects a{
+  width: 40%;
+  padding: .5em;
+  border-radius: 5px;
+  border: solid 1px grey;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+figure {
+  width: 100%;
+  margin: 0px;
+}
+
+figure img {
+  max-width: 100%;
+  display:block;
+  object-fit: scale-down;
+}
+
+#projects a, .project-title {
+  text-decoration: none;
+  text-align: center;
+}
+
+#projects a:hover figcaption {
+  text-decoration: underline;
+}
+
+#projects a:hover {
+  background-color: #FAFAFA;
+}
+
+#contact{
+  margin-top: 5em;
+}
+
+.contact-cards {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  border: 3px solid grey;
+  width: 5em;
+  height: 5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+  box-shadow: 10px 15px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+footer{
+  margin-top: 5em;
+  background-color: #333;
+  color: #FAFAFA;
+}
+
+footer p {
+  margin: 0;
+  padding: 1em;
+}
+
+@media (max-width: 600px) {
+  #navbar div {
+    flex-direction: column;
+    height: 5em;
+  }
+  
+  #navbar div a{
+    padding: .25em;
+  }
+  
+    main {
+    top: 5em;
+  }
+  
+  #main-content {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  #projects > a{
+    width: 80%;
+  }
+  
+  #projects figcaption{
+    font-size: smaller;
+  }
+  
+  .contact-card {
+    width: 100%;
+    height: 3em; 
+  }
+}
