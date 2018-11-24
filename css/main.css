@@ -64,8 +64,9 @@ main{
 }
 
 #projects a{
-  width: 40%;
+  width: 60%;
   padding: .5em;
+  margin: 1em;
   border-radius: 5px;
   border: solid 1px grey;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);

@@ -1,0 +1,18 @@
+body {
+  font-family: verdana;
+  text-align: center; 
+  background-color: #FEFEFE;
+}
+
+canvas {
+  display: block;
+  background-color: #E0E0E0;
+  width: 740px;
+  height: 500px;
+  margin: auto;
+}
+
+#main-section {
+  display: flex;
+  flex-direction: column;
+}
