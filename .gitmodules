@@ -1,0 +1,3 @@
+[submodule "projects/calculator"]
+	path = projects/calculator
+	url = https://github.com/nickbackus/calculator.git
