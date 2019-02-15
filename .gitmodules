@@ -1,3 +1,7 @@
 [submodule "projects/calculator"]
 	path = projects/calculator
 	url = https://github.com/nickbackus/calculator.git
+
+[submodule "projects/drum-pad"]
+	path = projects/drum-pad
+	url = https://github.com/nickbackus/drum-pad.git
