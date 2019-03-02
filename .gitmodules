@@ -5,3 +5,6 @@
 [submodule "projects/drum-pad"]
 	path = projects/drum-pad
 	url = https://github.com/nickbackus/drum-pad.git
+[submodule "projects/D3ScatterPlot"]
+	path = projects/D3ScatterPlot
+	url = git@github.com:nickbackus/D3ScatterPlot.git
