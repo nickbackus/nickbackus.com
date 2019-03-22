@@ -8,3 +8,6 @@
 [submodule "projects/D3ScatterPlot"]
 	path = projects/D3ScatterPlot
 	url = git@github.com:nickbackus/D3ScatterPlot.git
+[submodule "projects/react-markdown-previewer"]
+	path = projects/react-markdown-previewer
+	url = https://github.com/nickbackus/react-markdown-previewer
